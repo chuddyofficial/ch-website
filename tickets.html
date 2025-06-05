@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SASRP - Support Tickets</title>
+  <link rel="stylesheet" href="../public/css/style.css" />
+  <script src="../public/js/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="tickets.html" class="active">Tickets</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Submit a Support Ticket</h1>
+    <form id="ticketForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" placeholder="Your in-game or Discord username" required />
+
+      <label for="issue">Issue Description:</label>
+      <textarea id="issue" rows="5" placeholder="Describe your issue in detail" required></textarea>
+
+      <label for="category">Category:</label>
+      <select id="category" required>
+        <option value="" disabled selected>Select a category</option>
+        <option value="server">Server Issue</option>
+        <option value="account">Account / Role Issue</option>
+        <option value="bug">Bug Report</option>
+        <option value="other">Other</option>
+      </select>
+
+      <button type="submit" class="btn-primary">Submit Ticket</button>
+    </form>
+
+    <section id="confirmation" class="hidden">
+      <h2>Thank you for submitting your ticket!</h2>
+      <p>Our support team will review and respond shortly.</p>
+      <button id="newTicketBtn" class="btn-secondary">Submit Another Ticket</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SASRP Development Team. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

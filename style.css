@@ -1,0 +1,214 @@
+/* Reset and base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+}
+
+body {
+  background: url('../images/background.png') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: rgba(0,0,0,0.75);
+  padding: 15px 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+nav ul.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+nav ul.nav-list li a {
+  color: #f0f0f0;
+  font-weight: 600;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul.nav-list li a:hover,
+nav ul.nav-list li a.active {
+  background-color: #007BFF;
+  color: white;
+}
+
+.container {
+  flex-grow: 1;
+  background-color: rgba(255,255,255,0.95);
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 40px 50px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #004085;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+  background-color: #007BFF;
+  color: white;
+  padding: 14px 28px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  padding: 30px 25px;
+  width: 320px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #004085;
+}
+
+.card p {
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.services-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.services-list li {
+  background-color: #e9f0ff;
+  padding: 20px 25px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+.services-list li:hover {
+  background-color: #d1e3ff;
+}
+
+.services-list h3 {
+  color: #004085;
+  margin-bottom: 8px;
+}
+
+.services-list p {
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+label {
+  font-weight: 600;
+  color: #004085;
+  font-size: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+  padding: 12px 15px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+textarea {
+  min-height: 120px;
+}
+
+button.btn-primary {
+  align-self: flex-start;
+}
+
+.hidden {
+  display: none;
+}
+
+.login-container {
+  max-width: 400px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: rgba(0,0,0,0.75);
+  color: #ccc;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
